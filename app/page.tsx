@@ -6,12 +6,12 @@ import Link from "next/link";
 export default function Home() {
   return (
   <>
-    <section className="hero-container flex items-center justify-center h-screen ">
+    <section className="hero-container flex items-center justify-center h-screen bg-gray-900">
       
       <div className="hero-content-container flex items-center justify-between max-w-7xl w-full  py-5 z-10 px-5">
         <div className="hero-content">
           <div className="text max-w-xl text-left">
-            <h1 className="text-4xl text-[#333] dark:text-white">Hi, I&apos;m Mustafa ,</h1>
+            <h1 className="text-4xl text-[#333] dark:text-white ">Hi, I&apos;m Mustafa ,</h1>
             <span className="red-font text-3xl font-semibold text-red-600">Developer</span>
             <h2 className="text-4xl text-[#333] dark:text-white">From India</h2>
             <p className="p-text my-2 font-medium text-lg">
@@ -37,7 +37,7 @@ export default function Home() {
       <ParticleComponent />
 
     </section>
-    
+    <Footer/>
   </>
   );
 }

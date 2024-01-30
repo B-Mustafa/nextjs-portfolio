@@ -24,7 +24,7 @@ const ParticleComponent = () => {
     };
 
     const backgroundColor =
-        theme === "dark" ? "#2D3748" : "#DEE4E7";
+        theme === "dark" ? "#111827" : "#DEE4E7";
 
     const particleColor = 
         theme === "dark" ? "#fff" : "#222";
@@ -37,7 +37,7 @@ const ParticleComponent = () => {
             <Particles
                 className="cursor-pointer"
                 id="tsparticles"
-                particlesLoaded={particlesLoaded}
+                particlesLoaded={particlesLoaded as any}
                 options={{
                     
                     background: {
@@ -56,7 +56,10 @@ const ParticleComponent = () => {
                                 enable: true,
                                 mode: "repulse",
                             },
-                            resize: true,
+                            resize:{
+                                enable:true,
+                                
+                            } 
                         },
                         modes: {
                             push: {
@@ -92,8 +95,8 @@ const ParticleComponent = () => {
                         number: {
                             density: {
                                 enable: true,
-                                area: 800,
                             },
+                            
                             value: 80,
                         },
                         opacity: {

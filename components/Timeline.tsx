@@ -1,8 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,75 +10,62 @@ import { useTheme } from "next-themes";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { motion } from "framer-motion";
+import Footer from "./Footer";
 
-interface AnimatedTimelineElementProps {
-  isVisible: boolean;
-  children: React.ReactNode;
-}
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
+};
 
-function AnimatedTimelineElement({
-  isVisible,
-  children,
-}: AnimatedTimelineElementProps) {
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (isVisible) {
-      controls.start("visible");
-    }
-  }, [isVisible, controls]);
-
-  return (
-    <motion.div
-      initial="hidden"
-      animate={controls}
-      variants={{
-        visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 20 },
-      }}
-    >
-      {children}
-    </motion.div>
-  );
-}
 
 function Timeline() {
   const { theme } = useTheme();
-  const [ref, inView] = useInView({ triggerOnce: true });
+  
 
   const experiencesData = [
     {
-      title: "Graduated bootcamp",
-      location: "Miami, FL",
+      title: "Education",
+      location: "Gujarat ",
       description:
-        "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+        "I am currently pursuing my Diploma in Computer Engineering from Gujarat Technological University.",
       icon: React.createElement(LuGraduationCap),
-      date: "2019",
+      date: "2022-present",
     },
     {
-      title: "Front-End Developer",
-      location: "Orlando, FL",
+      title: "Experience",
+      location: "Gujarat , Godhra",
       description:
-        "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+        "I worked as an Intern at PHN Technology Pvt. Ltd. for 3 months where I worked on projects based on HTML , CSS , JavaScript .",
       icon: React.createElement(CgWorkAlt),
-      date: "2019 - 2021",
+      date: "2023",
     },
     {
       title: "Full-Stack Developer",
-      location: "Houston, TX",
+      location: "Gujarat , Godhra",
       description:
-        "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+        "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, MongoDB , FireBase. I'm open to full-time opportunities.",
       icon: React.createElement(FaReact),
-      date: "2021 - present",
+      date: "2023 - present",
     },
   ];
 
   return (
     <section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
-      <h2>My experience</h2>
+      <h2 className="text-3xl font-medium capitalize mb-8 text-left text-blue-700">My experience</h2>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
-          <VerticalTimelineElement
+          
+            <VerticalTimelineElement
             key={index}
             contentStyle={{
               background: theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
@@ -102,12 +87,27 @@ function Timeline() {
               visibility:  "visible" ,
             }}
           >
+            <motion.div
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: false,
+          }}
+          custom={index}
+          >
+
             <h3 className="font-semibold capitalize">{item.title}</h3>
+          
             <p className="font-normal !mt-0">{item.location}</p>
             <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{item.description}</p>
+          </motion.div>
           </VerticalTimelineElement>
+          
         ))}
       </VerticalTimeline>
+
+     
     </section>
 
   );
