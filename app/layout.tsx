@@ -21,14 +21,19 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider defaultTheme="system" attribute="class">
-        <div className="flex">
+            <Hamburger/>
+        <div className="flex h-screen overflow-hidden">
 
-          <Sidebar />
-          <Hamburger />
-         
-          {children}
-       
-        </div>
+            {/* Sidebar */}
+            <Sidebar />
+
+            {/* Main content container */}
+            <div className="flex flex-col flex-grow overflow-auto">
+              <Hamburger />
+              {children}
+            </div>
+
+          </div>
         
           
         </ThemeProvider>
