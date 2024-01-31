@@ -15,7 +15,7 @@ export default function About() {
   <>
     <motion.section
       
-      className=" max-w-full p-5 text-center leading-8  scroll-mt-28 flex flex-col bg-[#DEE4E7] dark:bg-gray-900 h-screen"
+      className=" max-w-full p-5 items-center leading-8  scroll-mt-28 flex flex-col bg-[#DEE4E7] dark:bg-gray-900 h-screen"
       
      
      

@@ -98,7 +98,7 @@ const Sidebar = () => {
 
   
     return (
-        <aside className='z-10' >
+        <aside className='z-10 ' >
           
           <section className={`z-10 h-screen overflow-y-auto ${isOpen ? "max-lg:block" : "max-md:hidden"} relative w-60 lg:max-w[150px] dark:bg-gray-800 bg-[#d5dbdf]`}>
             <div className="flex w-full  flex-col gap-10 justify-between items-center">

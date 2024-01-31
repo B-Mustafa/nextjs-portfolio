@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import ParticleComponent from "@/components/ParticleComponent";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,14 +22,14 @@ export default function Home() {
 
           <div className="links flex gap-5 ">
             <Link href="/projects">
-              <button className="btn-main bg-[#333] text-white px-2 py-2 rounded text-center cursor-pointer hover:bg-[#222]">
+              <Button className="btn-main bg-[#333] text-white px-2 py-2 rounded text-center cursor-pointer hover:bg-[#222]">
                 Projects
-              </button>
+              </Button>
             </Link>
             <Link href="/contact">
-              <button className="btn-main bg-[#333] text-white px-2 py-2 rounded text-center cursor-pointer hover:bg-[#222]">
+              <Button  className="btn-main bg-[#333] text-white px-2 py-2 rounded text-center cursor-pointer hover:bg-[#222]">
                 Let&apos;s Talk
-              </button>
+              </Button >
             </Link>
           </div>
         </div>

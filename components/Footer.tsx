@@ -5,7 +5,7 @@ import { FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaPatreon, FaYoutube } fr
 
 function Footer() {
   return (
-    <footer className="footer text-gray-900 dark:text-white px-5 z-10 relative bottom-0 dark:bg-gray-900 bg-[#DEE4E7]">
+    <footer className="footer items-center pb-2 text-gray-900 dark:text-white px-5 z-10 relative bottom-0 dark:bg-gray-900 bg-[#DEE4E7]">
     <div className="container2 max-w-[800px] my-auto flex justify-between items-center ">
       <div className="social-icons flex gap-2 ">
         <Link href="www.linkedin.com/in/mustafa-bhikhapurwala-78514126b" className="icon text-2xl text-gray-900 dark:text-white" target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ function Footer() {
           <FaYoutube />
         </Link>
       </div>
-      <p className="copyright text-base">&copy; 2024 Mustafa Bhikhapurwala. All rights reserved.</p>
+      <p className="copyright text-base">&copy; Copyright 2024 Mustafa Bhikhapurwala. All rights reserved.</p>
     </div>
   </footer>
   )

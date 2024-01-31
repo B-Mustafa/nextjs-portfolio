@@ -10,6 +10,7 @@ import { useMenuStore } from '@/store/useMenuStore'
 
 function Hamburger() {
     const { isOpen, closeMobileMenu , toggleMenu } = useMenuStore();
+    
   return (
     <header className='flex item-center justify-between z-20'>
       <div className="text-2xl z-50  md:invisible flex justify-end p-2 absolute top-0 right-0" onClick={toggleMenu}>
