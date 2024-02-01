@@ -24,10 +24,10 @@ const ParticleComponent = () => {
     };
 
     const backgroundColor =
-        theme === "dark" ? "#111827" : "#DEE4E7";
+        theme === "light" ? "#DEE4E7" : "#111827" ;
 
     const particleColor = 
-        theme === "dark" ? "#fff" : "#222";
+        theme === "light" ? "#222" : "#fff";
     
     
 

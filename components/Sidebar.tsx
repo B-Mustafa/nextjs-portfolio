@@ -28,7 +28,7 @@ const SidebarItems = [
   },
   {
     name: 'Services',
-    href: '/services',
+    href: '/service',
     icon: FaServicestack,
   },
   {
@@ -116,7 +116,7 @@ const Sidebar = () => {
                       href={`${link.href}`}
                       key={link.name}
                       className={`items-center  text-lg text-black flex bg-[#f3f4f6] dark:bg-gray-700 rounded-md dark:text-white  mb-4 p-3  ${
-                        isActive ? " text-blue-600 dark:text-blue-600" : "text-black dark:text-white"
+                        isActive ? " text-blue-600" : "text-black "
                       }`}
                       onClick={() => handleLinkClick(link)}
                       >

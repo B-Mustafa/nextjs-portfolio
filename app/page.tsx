@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Home() {
   return (
   <>
-    <section className="hero-container flex items-center justify-center h-screen bg-gray-900">
+    <section className="hero-container flex items-center justify-center h-screen bg-[#DEE4E7] dark:bg-gray-900">
       
       <div className="hero-content-container flex items-center justify-between max-w-7xl w-full  py-5 z-10 px-5">
         <div className="hero-content">
@@ -21,7 +21,7 @@ export default function Home() {
           </div>
 
           <div className="links flex gap-5 ">
-            <Link href="/projects">
+            <Link href="/project">
               <Button className="btn-main bg-[#333] text-white px-2 py-2 rounded text-center cursor-pointer hover:bg-[#222]">
                 Projects
               </Button>
@@ -42,3 +42,4 @@ export default function Home() {
   </>
   );
 }
+

@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Sidebar from "@/components/Sidebar";
 import Hamburger from "@/components/Hamburger";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider defaultTheme="system" attribute="class">
-            <Hamburger/>
+        <Toaster/>
         <div className="flex h-screen overflow-hidden">
 
             {/* Sidebar */}
@@ -29,7 +30,8 @@ export default function RootLayout({
 
             {/* Main content container */}
             <div className="flex flex-col flex-grow overflow-auto">
-              <Hamburger />
+            <Hamburger/>
+              
               {children}
             </div>
 

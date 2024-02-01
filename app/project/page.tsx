@@ -32,7 +32,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className=" p-5 items-center leading-8   flex flex-col bg-[#DEE4E7] dark:bg-gray-900 h-screen overflow-auto">
+      <section className=" z-10 p-5 items-center leading-8   flex flex-col bg-[#DEE4E7] dark:bg-gray-900 h-screen overflow-auto">
         <div className="grid-container">
           <div>
             <h2 className="text-3xl font-medium capitalize mb-8 text-left text-blue-700">Projects</h2>
@@ -74,8 +74,10 @@ const Projects = () => {
             </div>
           )}
         </div>
-      </section>
+        <div className="mt-5">
       <Footer/>
+        </div>
+      </section>
     </>
   );
 };
