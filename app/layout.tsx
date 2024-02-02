@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Sidebar from "@/components/Sidebar";
 import Hamburger from "@/components/Hamburger";
 import { Toaster } from "react-hot-toast";
+import './posts.css'
 
 const inter = Inter({ subsets: ["latin"] });
 
