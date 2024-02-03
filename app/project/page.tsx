@@ -32,13 +32,13 @@ const Projects = () => {
 
   return (
     <>
-      <section className=" z-10 p-5 items-center leading-8   flex flex-col bg-[#DEE4E7] dark:bg-gray-900 h-screen overflow-auto">
+      <section className=" z-10 p-5  leading-8   flex flex-col bg-[#DEE4E7] dark:bg-gray-900 h-screen overflow-auto">
         <div className="grid-container">
           <div>
             <h2 className="text-3xl font-medium capitalize mb-8 text-left text-blue-700">Projects</h2>
           </div>
           <ProjectFilter setFiltered={setFiltered} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
-          <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 ">
+          <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-5  ">
             <AnimatePresence>
               {filtered.slice(0,visibleProjects).map((project, index) => (
                 <motion.div
@@ -74,10 +74,10 @@ const Projects = () => {
             </div>
           )}
         </div>
-        <div className="mt-5">
-      <Footer/>
-        </div>
       </section>
+       
+      <Footer/>
+        
     </>
   );
 };
