@@ -6,6 +6,7 @@ import Sidebar from "@/components/Sidebar";
 import Hamburger from "@/components/Hamburger";
 import { Toaster } from "react-hot-toast";
 import './posts.css'
+import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
@@ -36,6 +37,7 @@ export default function RootLayout({
             <Hamburger/>
               
               {children}
+              <Analytics/>
             </div>
 
           </div>
