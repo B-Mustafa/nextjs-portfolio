@@ -24,7 +24,7 @@ export default function About() {
       <h2 className="text-3xl font-medium capitalize mb-8 text-left text-blue-700">About me</h2>
       <p className="mb-3">
         After completing my 12th  in{" "}
-        <span className="font-medium">Science Biology</span>&comma; I decided to pursue my
+        <span className="font-medium">Science Biology</span>,I decided to pursue my
         passion for programming. I enrolled in a a Diploma Course of{" "}
         <span className="font-medium">Computer Engineering</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
@@ -32,7 +32,7 @@ export default function About() {
         feeling of finally figuring out a solution to a problem. My core stack
         is{" "}
         <span className="font-medium">
-          React&comma; Next.js&comma; Node.js&comma; and MongoDB
+          React, Next.js, Node.js, and MongoDB
         </span>
         . I am also familiar with TypeScript . I am always looking to
         learn new technologies. I am currently looking for a{" "}
