@@ -53,6 +53,7 @@ export async function getPostData(id: string) {
     const blogPostWithHTML : posts & { contentHtml: string } = {
         id,
         title: matterResult.data.title,
+        author: matterResult.data.author || '',
         date: matterResult.data.date,
         contentHtml,
     }

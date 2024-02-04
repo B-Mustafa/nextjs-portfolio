@@ -24,7 +24,7 @@ const Contact= () => {
       }
   
       try {
-        const result = await emailjs.sendForm("service_metx8h5", "template_zvv235d", form.current, emailjsApiKey);
+        const result = await emailjs.sendForm("service_metx8h5", "template_zvv235d", form.current ?? '', emailjsApiKey);
   
         form.current?.reset();
         toast.success("Message sent successfully!");
