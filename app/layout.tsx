@@ -6,6 +6,7 @@ import Sidebar from "@/components/Sidebar";
 import Hamburger from "@/components/Hamburger";
 import { Toaster } from "react-hot-toast";
 import './posts.css'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider defaultTheme="system" attribute="class">
+          <SpeedInsights/>
         <Toaster/>
         <div className="flex h-screen overflow-hidden">
 
