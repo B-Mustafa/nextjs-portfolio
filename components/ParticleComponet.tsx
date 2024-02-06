@@ -1,5 +1,4 @@
 "use client"
-
 import { useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container } from "@tsparticles/engine";
@@ -8,7 +7,7 @@ import { useTheme } from "next-themes";
 
 const ParticleComponent = () => {
     const [init, setInit] = useState(false);
-    const { theme  } = useTheme();
+    const { theme } = useTheme();
 
     // this should be run only once per application lifetime
     useEffect(() => {
@@ -23,14 +22,9 @@ const ParticleComponent = () => {
         console.log(container);
     };
 
-    const backgroundColor =
-        theme === "dark" ? "#111827" : "#DEE4E7";
+    const backgroundColor = theme === "dark" ? "#111827" : "#DEE4E7";
 
-    const particleColor = 
-        theme === "dark" ? "#fff" : "#222";
-
-
-
+    const particleColor = theme === "dark" ? "#fff" : "#222";
 
     return (
         init && (
@@ -39,10 +33,9 @@ const ParticleComponent = () => {
                 id="tsparticles"
                 particlesLoaded={particlesLoaded as any}
                 options={{
-
                     background: {
                         color: {
-                            value:backgroundColor,
+                            value: backgroundColor,
                         },
                     },
                     fpsLimit: 120,
@@ -56,7 +49,8 @@ const ParticleComponent = () => {
                                 enable: true,
                                 mode: "repulse",
                             },
-                            resize: true,
+                            // Provide an empty object for resize
+                            resize: {},
                         },
                         modes: {
                             push: {
@@ -73,7 +67,7 @@ const ParticleComponent = () => {
                             value: particleColor,
                         },
                         links: {
-                            color: particleColor ,
+                            color: particleColor,
                             distance: 150,
                             enable: true,
                             opacity: 0.5,
@@ -92,7 +86,7 @@ const ParticleComponent = () => {
                         number: {
                             density: {
                                 enable: true,
-                                area: 800,
+                                // area: 800,
                             },
                             value: 80,
                         },
