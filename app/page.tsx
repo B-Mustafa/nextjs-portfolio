@@ -1,5 +1,6 @@
 
 import Footer from "@/components/Footer";
+import ParticleComponent from "@/components/ParticleComponet";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,27 +36,15 @@ export default function Home() {
         </div>
         <Image src="/assets/sidemenu.jpg" width={300} height={400} alt="Mustafa Bhikhapurwala" className="img z-10 max-w-full h-auto rounded-md" />
       </div>
-      {/* Added custom bg animated  */}
-      <div className='wrapper '>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    
+      <ParticleComponent/>
+      
 
    
     </section>
-    <div>
+
 
     <Footer/>
-    </div>
+    
   </>
   );
 }

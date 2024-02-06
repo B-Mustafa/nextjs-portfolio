@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider defaultTheme="system" attribute="class">
+        <ThemeProvider defaultTheme="dark" attribute="class">
           <SpeedInsights/>
         <Toaster/>
         <div className="flex h-screen overflow-hidden">
