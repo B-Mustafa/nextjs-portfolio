@@ -29,10 +29,6 @@ const servicesData: Service[] = [
     description: 'Create responsive and dynamic websites tailored to your needs.',
   },
   {
-    title: 'Mobile App Development',
-    description: 'Build cross-platform mobile applications using the latest technologies.',
-  },
-  {
     title: 'UI/UX Design',
     description: 'Craft visually appealing and user-friendly interfaces for your projects.',
   },
@@ -45,10 +41,6 @@ const servicesData: Service[] = [
     description: 'Host your website on a secure and fast server.',
   },
   {
-    title: 'Consulting',
-    description: 'Get advice on your project and find the best solutions for your business.',
-  },
-  {
     title: 'Maintenance',
     description: 'Keep your website up to date and secure.',
   },
@@ -56,14 +48,7 @@ const servicesData: Service[] = [
     title: 'E-Commerce',
     description: 'Build an online store to sell your products.',
   },
-  {
-    title: 'Web Scraping',
-    description: 'Extract data from websites and automate tasks.',
-  },
-  {
-    title: 'API Development',
-    description: 'Create APIs to connect your applications to the web.',
-  },
+  
   {
     title: 'Database Management',
     description: 'Store and manage your data in a secure and efficient way.',
