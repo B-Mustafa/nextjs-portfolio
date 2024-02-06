@@ -75,8 +75,8 @@ const Projects = () => {
           )}
         </div>
       </section>
-       
       <Footer/>
+       
         
     </>
   );

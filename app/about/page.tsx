@@ -42,7 +42,7 @@ export default function About() {
 
       <p>
         <span className="italic">When I&apos;m not coding</span>, I enjoy playing
-        video games&comma; watching movies and surfing over web to keep myself updated. I also enjoy{" "}
+        video games, watching movies and surfing over web to keep myself updated. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
         <span className="font-medium">Artificial Intelligence</span>
@@ -63,8 +63,8 @@ export default function About() {
       <Timeline/>
 
     </motion.section>
-
      <Footer/>
+
     </>
   );
 }

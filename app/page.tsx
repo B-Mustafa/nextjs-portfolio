@@ -48,8 +48,14 @@ export default function Home() {
         <span></span>
         <span></span>
     </div>
+    
+
+   
     </section>
+    <div>
+
     <Footer/>
+    </div>
   </>
   );
 }
