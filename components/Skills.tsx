@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import HTMLicon from "@/public/assets/html.svg"
 import CSSicon from "@/public/assets/css.svg"
 import JSicon from "@/public/assets/javascript.svg"
@@ -35,20 +35,21 @@ const fadeInAnimationVariants = {
 
 export default function Skills() {
 
+ 
     const SkillsData = [
-        {icon: HTMLicon},
-        {icon: CSSicon},
-        {icon: JSicon},
-        {icon: TSicon},
-        {icon: REACTJSicon},
-        {icon: NEXTJSicon},
-        {icon: NODEJSicon},
-        {icon: GITicon},
-        {icon: TAILWINDCSSicon},
-        {icon: PYTHONicon},
-        {icon: MONGODBicon},
-        {icon: FIREBASEicon},
-        {icon: EXPRESSJSicon},
+        {icon: HTMLicon , name:"HTML" , description:"Skeleton of website"},
+        {icon: CSSicon , name:"CSS" , description:""},
+        {icon: JSicon , name:"Javascript" , description:"used for functionality"},
+        {icon: TSicon , name:"" , description:""},
+        {icon: REACTJSicon , name:"" , description:""},
+        {icon: NEXTJSicon , name:"" , description:""},
+        {icon: NODEJSicon , name:"" , description:""},
+        {icon: GITicon , name:"" , description:""},
+        {icon: TAILWINDCSSicon , name:"" , description:""},
+        {icon: PYTHONicon , name:"" , description:""},
+        {icon: MONGODBicon , name:"" , description:""},
+        {icon: FIREBASEicon , name:"" , description:""},
+        {icon: EXPRESSJSicon , name:"" , description:""},
     ]
 
 
@@ -59,7 +60,7 @@ export default function Skills() {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 items-center "
     >
       <h2 className="text-3xl font-medium capitalize mb-8 text-left text-blue-700">My skills</h2>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <ul className="flex flex-wrap  justify-around gap-3 text-lg text-gray-800">
         {SkillsData.map((skill, index) => (
           <motion.li
             className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
@@ -71,8 +72,11 @@ export default function Skills() {
               once: false,
             }}
             custom={index}
+            
           >
-            <Image src={skill.icon} alt="tech-icon" />
+          
+              <Image src={skill.icon} alt="tech-icon" />
+             
           </motion.li>
         ))}
       </ul>
