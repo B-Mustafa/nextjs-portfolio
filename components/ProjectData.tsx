@@ -14,7 +14,7 @@ export const ProjectData = [
         githubUrl: "https://github.com/B-Mustafa/Portfolio.git",
         description: "A Portfolio website designed using Html, Css, Javascript .",
         technology: "Html, Css, Javascript",
-        projectUrl: "https://mustafadev.me/",
+        projectUrl: "https://mustafab.vercel.app/",
         category: "vanilla",
         deployed: true,
     },
