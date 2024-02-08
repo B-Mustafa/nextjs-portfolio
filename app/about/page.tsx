@@ -8,6 +8,7 @@ import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 
 
+
 export default function About() {
   
   
@@ -56,6 +57,7 @@ export default function About() {
       <Skills/>
 
     </motion.section>
+
 
     <motion.section
     className=" max-w-full p-5 text-center leading-8  scroll-mt-28 flex flex-col bg-[#DEE4E7] dark:bg-gray-900 "
