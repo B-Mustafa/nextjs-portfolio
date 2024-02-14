@@ -28,12 +28,11 @@ export default function RootLayout({
 
     <head>
     {/* <!-- Google tag (gtag.js) --> */}
-    <Script
-        strategy="lazyOnload"
+    <script
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
 
-      <Script id="gtag-config" strategy="lazyOnload">
+      <script id="gtag-config" >
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -41,7 +40,7 @@ export default function RootLayout({
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
           page_path: window.location.pathname,
         `}
-      </Script>
+      </script>
     </head>
 
       <body className={inter.className}>
