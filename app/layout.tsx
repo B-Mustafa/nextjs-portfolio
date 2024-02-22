@@ -27,20 +27,7 @@ export default function RootLayout({
     <html lang="en">
 
     <head>
-    {/* <!-- Google tag (gtag.js) --> */}
-    <script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-
-      <script id="gtag-config" >
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
-          page_path: window.location.pathname,
-        `}
-      </script>
+    
     </head>
 
       <body className={inter.className}>
