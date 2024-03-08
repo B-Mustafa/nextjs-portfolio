@@ -56,7 +56,7 @@ function Timeline() {
             <VerticalTimelineElement
             key={index}
             contentStyle={{
-              background: theme === "light" ? "#fdf7f2" : "#0d0702",
+              background: theme === "dark" ? "#0d0702" : "#fdf7f2",
               boxShadow: "none",
               border: "1px solid #c86b3c ",
               textAlign: "left",
@@ -64,13 +64,13 @@ function Timeline() {
               visibility: "visible" ,
             }}
             contentArrowStyle={{
-              borderRight: theme === "light" ? "0.4rem solid #784930" : "0.4rem solid #cfa087",
+              borderRight: theme === "dark" ? "0.4rem solid #cfa087" : "0.4rem solid #784930",
               visibility:  "visible",
             }}
             date={item.date}
             icon={item.icon}
             iconStyle={{
-              background: theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+              background: theme === "dark" ? "#0d0702" : "#fdf7f2",
               fontSize: "1.5rem",
               visibility:  "visible" ,
             }}
