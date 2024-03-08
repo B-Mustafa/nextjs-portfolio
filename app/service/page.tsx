@@ -57,12 +57,12 @@ const servicesData: Service[] = [
 
 const ServiceComponent: React.FC = () => {
   return (
-    <section className="container mx-auto p-8 max-w-full text-center leading-8 scroll-mt-28 flex flex-col bg-[#DEE4E7] dark:bg-gray-900 h-screen overflow-auto">
-      <h2 className="text-3xl font-medium capitalize mb-8 text-left text-blue-700">Services</h2>
+    <section className="container mx-auto p-8 max-w-full text-center leading-8 scroll-mt-28 flex flex-col bg-light-background dark:bg-dark-background h-screen overflow-auto">
+      <h2 className="text-3xl font-medium capitalize mb-8 text-left text-light-accent dark:text-dark-accent">Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {servicesData.map((service, index) => (
           <motion.div
-            className="dark:bg-gray-800 bg-[#d5dbdd] text-black dark:text-white p-7 shadow-md rounded  "
+            className="dark:bg-dark-background bg-light-background border border-light-accent text-light-text dark:text-dark-text p-7 shadow-md shadow-dark-primary dark:shadow-light-primary rounded  "
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -73,7 +73,7 @@ const ServiceComponent: React.FC = () => {
             custom={index}
           >
             <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-            <p className="text-gray-700 dark:text-gray-400">{service.description}</p>
+            <p className="text-light-text dark:text-dark-text">{service.description}</p>
           </motion.div>
         ))}
       </div>

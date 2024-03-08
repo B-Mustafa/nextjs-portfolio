@@ -4,6 +4,7 @@
  
 @layer base {
   :root {
+    
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -77,13 +78,13 @@
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: rgb(17 24 39);
+  background-color: #563c2e ;
 }
 
 
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(55 65 81);
+  background: #cfa087 ;
   border-radius: 10px;
 }
 

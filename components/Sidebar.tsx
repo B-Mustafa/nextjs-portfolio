@@ -31,11 +31,7 @@ const SidebarItems = [
     href: '/service',
     icon: FaServicestack,
   },
-  {
-    name: 'Blogs',
-    href: '/blog',
-    icon: FaBlog,
-  },
+
   {
     name: 'Contact',
     href: '/contact',
@@ -100,11 +96,11 @@ const Sidebar = () => {
     return (
         <aside className='z-10 ' >
           
-          <section className={`z-10 h-screen overflow-y-auto ${isOpen ? "max-lg:block" : "max-md:hidden"} relative w-60 lg:max-w[150px] dark:bg-gray-800 bg-[#d5dbdf]`}>
+          <section className={`z-10 h-screen overflow-y-auto ${isOpen ? "max-lg:block" : "max-md:hidden"} relative w-60 lg:max-w[150px] dark:bg-dark-background bg-light-background shadow-md shadow-dark-background dark:shadow-light-background`} >
             <div className="flex w-full  flex-col gap-10 justify-between items-center">
               <div className="flex w-full flex-1 flex-col gap-10 justify-between items-center ">
                 <Image src="/assets/sidemenu.jpg" width={100} height={50} alt="Mustafa" className='rounded-full' />
-                <p className="font-bold text-xl text-black dark:text-white">Mustafa </p>
+                <p className="font-bold text-xl text-light-text dark:text-dark-text">Mustafa </p>
               </div>
     
               <div>
@@ -115,8 +111,8 @@ const Sidebar = () => {
                     <a
                       href={`${link.href}`}
                       key={link.name}
-                      className={`items-center  text-lg text-black flex bg-[#f3f4f6] dark:bg-gray-700 rounded-md dark:text-white  mb-4 p-3  ${
-                        isActive ? " text-blue-600" : "text-black "
+                      className={`items-center  text-lg text-text flex bg-light-background dark:bg-dark-background rounded-md dark:text-dark-text text-light-text  mb-4 p-3 border border-dark-accent dark:border-light-accent  ${
+                        isActive ? " text-blue-600" : "text-text "
                       }`}
                       onClick={() => handleLinkClick(link)}
                       >

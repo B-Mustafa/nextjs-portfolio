@@ -10,6 +10,19 @@ const config = {
 	],
   prefix: "",
   theme: {
+    colors: {
+      'light-text': '#1c1003',
+      'light-background': '#fdf7f2',
+      'light-primary': '#563c2e',
+      'light-secondary': '#cfa087',
+      'light-accent': '#c36637',
+      'dark-text': '#fcf0e3',
+      'dark-background': '#0d0702',
+      'dark-primary': '#d1b7a9',
+      'dark-secondary': '#784930',
+      'dark-accent': '#c86b3c',
+     },
+     
     container: {
       center: true,
       padding: "2rem",

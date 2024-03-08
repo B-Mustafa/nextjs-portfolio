@@ -67,24 +67,24 @@ export default function Skills() {
       
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 items-center "
     >
-      <h2 className="text-3xl font-medium capitalize mb-8 text-left text-blue-700">My Backpack</h2>
+      <h2 className="text-3xl font-medium capitalize mb-8 text-left text-light-accent dark:text-dark-accent">My Backpack</h2>
       <li className="text-lg mb-5 text-left ">technologies i use !</li>
-      <ul className="flex flex-wrap  justify-space-between gap-5 text-lg text-gray-800">
+      <ul className="flex flex-wrap  justify-space-between gap-5 text-lg text-text">
         {SkillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="bg-light-background border border-light-accent dark:border-dark-accent  dark:border-white rounded-xl px-5 py-3 dark:bg-dark-background dark:text-dark-text"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
             viewport={{
-              once: false,
+              once: true,
             }}
             custom={index}
             
           >
             
-              <Image src={skill.icon} alt="tech-icon" />
+              <Image src={skill.icon} alt="tech-icon"  className={(skill.icon === github || skill.icon === NEXTJSicon) ? "dark:invert" : ""} />
               
           </motion.li>
         ))}

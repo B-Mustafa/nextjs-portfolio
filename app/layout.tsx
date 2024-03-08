@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
 
     <head>
-    {/* <!-- Google tag (gtag.js) --> */}
+    {/* <!-- Google tag (gtag.js) -->
     <script
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
@@ -40,7 +40,7 @@ export default function RootLayout({
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
           page_path: window.location.pathname,
         `}
-      </script>
+      </script> */}
     </head>
 
       <body className={inter.className}>

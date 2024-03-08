@@ -32,10 +32,10 @@ const Projects = () => {
 
   return (
     <>
-      <section className=" z-10 p-5  leading-8   flex flex-col bg-[#DEE4E7] dark:bg-gray-900 h-screen overflow-auto">
+      <section className="  p-5  leading-8   flex flex-col bg-light-background dark:bg-dark-background h-screen overflow-auto">
         <div className="grid-container">
           <div>
-            <h2 className="text-3xl font-medium capitalize mb-8 text-left text-blue-700">Projects</h2>
+            <h2 className="text-3xl font-medium capitalize mb-8 text-left text-light-accent dark:text-dark-accent">Projects</h2>
           </div>
           <ProjectFilter setFiltered={setFiltered} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
           <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-5  ">
@@ -68,7 +68,7 @@ const Projects = () => {
           </motion.div>
           {visibleProjects < filtered.length && (
             <div className="text-center mt-4">
-              <button className="show-more-button" onClick={loadMoreProjects}>
+              <button className="show-more-button bg-light-secondary dark:bg-dark-secondary" onClick={loadMoreProjects}>
                 Show More
               </button>
             </div>

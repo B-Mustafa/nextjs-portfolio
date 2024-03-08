@@ -23,31 +23,31 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ setFiltered, activeCatego
     <>
       <div className=" flex space-x-2 flex-wrap gap-2 ">
         <Button
-          className={`category ${activeCategory === "all" ? "bg-gray-700 dark:bg-[#DEE4E7]" : ""}`}
+          className={`category ${activeCategory === "all" ? "bg-dark-secondary dark:bg-light-secondary" : ""}`}
           onClick={() => setActiveCategory("all")} 
         >
           All
         </Button>
         <Button
-          className={`category ${activeCategory === "fs" ? "bg-gray-700 dark:bg-[#DEE4E7]" : ""}`}
+          className={`category ${activeCategory === "fs" ? "bg-dark-secondary dark:bg-light-secondary" : ""}`}
           onClick={() => setActiveCategory("fs")}
         >
           Full Stack
         </Button>
         <Button
-          className={`category ${activeCategory === "NextJs" ? "bg-gray-700 dark:bg-[#DEE4E7]" : ""}`}
+          className={`category ${activeCategory === "NextJs" ? "bg-dark-secondary dark:bg-light-secondary" : ""}`}
           onClick={() => setActiveCategory("NextJs")}
         >
           NextJs
         </Button>
         <Button
-          className={`category ${activeCategory === "vanilla" ? "bg-gray-700 dark:bg-[#DEE4E7]" : ""}`}
+          className={`category ${activeCategory === "vanilla" ? "bg-dark-secondary dark:bg-light-secondary" : ""}`}
           onClick={() => setActiveCategory("vanilla")}
         >
           HTML/CSS/JS
         </Button>
         <Button
-          className={`category ${activeCategory === "py" ? "bg-gray-700 dark:bg-[#DEE4E7]" : ""}`}
+          className={`category ${activeCategory === "py" ? "bg-dark-secondary dark:bg-light-secondary" : ""}`}
           onClick={() => setActiveCategory("py")}
         >
           Python

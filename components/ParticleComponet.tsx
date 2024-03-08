@@ -22,9 +22,9 @@ const ParticleComponent = () => {
         console.log(container);
     };
 
-    const backgroundColor = theme === "dark" ? "#111827" : "#DEE4E7";
+    const backgroundColor = theme === "dark" ? "#0d0702" : "#fdf7f2";
 
-    const particleColor = theme === "dark" ? "#fff" : "#222";
+    const particleColor = theme === "dark" ? "#fcf0e3" : "#1c1003";
 
     return (
         init && (
