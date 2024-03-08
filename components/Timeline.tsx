@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -19,6 +19,13 @@ import Footer from "./Footer";
 function Timeline() {
   const { theme } = useTheme();
   
+  const [key, setKey] = useState(0); 
+
+  useEffect(() => {
+     
+     setKey(prevKey => prevKey + 1);
+  }, [theme]);
+
 
   const experiencesData = [
     {
@@ -50,31 +57,31 @@ function Timeline() {
   return (
     <section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
       <h2 className="text-3xl font-medium capitalize mb-8 text-left text-light-accent dark:text-dark-accent">My experience</h2>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline key={key} lineColor="">
         {experiencesData.map((item, index) => (
           
-            <VerticalTimelineElement
-            key={index}
-            contentStyle={{
-              background: theme === "dark" ? "#0d0702" : "#fdf7f2",
-              boxShadow: "none",
-              border: "1px solid #c86b3c ",
-              textAlign: "left",
-              padding: "1.3rem 2rem",
-              visibility: "visible" ,
-            }}
-            contentArrowStyle={{
-              borderRight: theme === "dark" ? "0.4rem solid #cfa087" : "0.4rem solid #784930",
-              visibility:  "visible",
-            }}
-            date={item.date}
-            icon={item.icon}
-            iconStyle={{
-              background: theme === "dark" ? "#0d0702" : "#fdf7f2",
-              fontSize: "1.5rem",
-              visibility:  "visible" ,
-            }}
-          >
+          <VerticalTimelineElement
+          key={index}
+          contentStyle={{
+            background: theme == "dark" ? "#0d0702" : "#fdf7f2",
+            boxShadow: "none",
+            border: "1px solid #c86b3c",
+            textAlign: "left",
+            padding: "1.3rem 2rem",
+            visibility: "visible",
+          }}
+          contentArrowStyle={{
+            borderRight: theme == "dark" ? "0.4rem solid #cfa087" : "0.4rem solid #784930",
+            visibility: "visible",
+          }}
+          date={item.date}
+          icon={item.icon}
+          iconStyle={{
+            background: theme == "dark" ? "#0d0702" : "#fdf7f2",
+            fontSize: "1.5rem",
+            visibility: "visible",
+          }}
+        >
             
          
 
