@@ -94,16 +94,13 @@ const Sidebar = () => {
 
   
     return (
-        <aside className='z-10 ' >
+        <aside className='z-10 items-center' >
           
-          <section className={`z-10 h-screen overflow-y-auto ${isOpen ? "max-lg:block" : "max-md:hidden"} relative w-60 lg:max-w[150px] dark:bg-dark-background bg-light-background shadow-md shadow-dark-background dark:shadow-light-background`} >
-            <div className="flex w-full  flex-col gap-10 justify-between items-center">
-              <div className="flex w-full flex-1 flex-col gap-10 justify-between items-center ">
-                <Image src="/assets/sidemenu.jpg" width={100} height={50} alt="Mustafa" className='rounded-full' />
-                <p className="font-bold text-xl text-light-text dark:text-dark-text">Mustafa </p>
-              </div>
+          <section className={`z-10 h-screen overflow-y-auto ${isOpen ? "max-lg:block" : "max-md:hidden"} relative w-60 lg:max-w[150px] dark:bg-dark-background bg-light-background shadow-md shadow-dark-background dark:shadow-light-background flex justify-center`} >
+           
     
-              <div>
+              <div className='flex flex-col justify-center'>
+                <p className="font-bold text-xl text-light-text dark:text-dark-text text-center mb-6">Mustafa </p>
                 {SidebarItems.map((link) => {
                   const isActive = activeLink === link;
     
@@ -111,7 +108,7 @@ const Sidebar = () => {
                     <a
                       href={`${link.href}`}
                       key={link.name}
-                      className={`items-center  text-lg text-text flex bg-light-background dark:bg-dark-background rounded-md dark:text-dark-text text-light-text  mb-4 p-3 border border-dark-accent dark:border-light-accent  ${
+                      className={`items-center  text-lg text-text flex bg-light-background dark:bg-dark-background rounded-md dark:text-dark-text text-light-text  mb-4 p-3 border border-dark-accent dark:border-light-accent dark:border-opacity-30  border-opacity-30 ${
                         isActive ? " text-blue-600" : "text-text "
                       }`}
                       onClick={() => handleLinkClick(link)}
@@ -123,7 +120,7 @@ const Sidebar = () => {
                 })}
               </div>
                
-              </div>
+        
             
           </section>
         </aside>
