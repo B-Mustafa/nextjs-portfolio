@@ -1,38 +1,34 @@
 "use client"
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import { FaDiscord, FaPaperPlane, FaPatreon, FaYoutube } from "react-icons/fa";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import Footer from "@/components/Footer";
+import { sendEmail } from '@/actions/EmailSend';
 
-const emailjsApiKey = "nWGsp6QzzQUiYqR35";
 
-const Contact= () => {
-    const form = useRef<HTMLFormElement>(null);
-    const nameRef = useRef<HTMLInputElement>(null);
-    const emailRef = useRef<HTMLInputElement>(null);
-    const subjectRef = useRef<HTMLInputElement>(null);
-    const messageRef = useRef<HTMLTextAreaElement>(null);
-  
-    const sendEmail = async (e: React.FormEvent) => {
-      e.preventDefault();
-  
-      if (!nameRef.current?.value || !emailRef.current?.value || !subjectRef.current?.value || !messageRef.current?.value) {
-        toast.error("Please fill in all fields");
-        return;
-      }
-  
-      try {
-        const result = await emailjs.sendForm("service_metx8h5", "template_zvv235d", form.current ?? '', emailjsApiKey);
-  
-        form.current?.reset();
-        toast.success("Message sent successfully!");
-      } catch (error) {
-        console.error(error);
-        toast.error("Error sending email");
-      }
-    };
+function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    console.log(formData);
+    
+    setFormData({ name: '', email: '', subject: '', message: '' });
+  };
+
+
   return (
     <>
     <div className=" max-w-full p-5  leading-8  scroll-mt-28 flex flex-col bg-light-background dark:bg-dark-background h-screen overflow-auto">
@@ -72,16 +68,28 @@ const Contact= () => {
               </div>
              </div>
     <div className="new-contact-form max-w-2xl mx-auto">
-    <form onSubmit={sendEmail} ref={form} className="space-y-4">
+    <form  action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Email sent successfully!");
+        }}
+            >
       <label htmlFor="name" className="block text-light-primary dark:text-dark-primary text-sm font-bold mb-2">
         Your Name:
       </label>
       <input
-        type="text"
-        id="name"
         name="name"
-        ref={nameRef}
+        type="text"
         required
+        maxLength={500}
+        placeholder="Your Name"
+        value={formData.name}
+        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         className="bg-light-background dark:bg-dark-background w-full p-3 border border-light-accent dark:border-dark-accent  rounded focus:outline-none focus:border-light-accent dark:focus:border-dark-accent"
         />
 
@@ -89,12 +97,13 @@ const Contact= () => {
         Your Email:
       </label>
       <input
+        name="senderEmail"
         type="email"
-        id="email"
-        name="email"
-        autoComplete="email"
-        ref={emailRef}
         required
+        maxLength={500}
+        placeholder="Your email"
+        value={formData.email}
+        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         className="bg-light-background dark:bg-dark-background w-full p-3 border border-light-accent dark:border-dark-accent  rounded focus:outline-none focus:border-light-accent dark:focus:border-dark-accent"
         />
 
@@ -102,11 +111,13 @@ const Contact= () => {
         Subject:
       </label>
       <input
-        type="text"
-        id="subject"
         name="subject"
-        ref={subjectRef}
+        type="text"
         required
+        maxLength={500}
+        placeholder="Your Subject"
+        value={formData.subject}
+        onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
         className="bg-light-background dark:bg-dark-background w-full p-3 border border-light-accent dark:border-dark-accent  rounded focus:outline-none focus:border-light-accent dark:focus:border-dark-accent"
         />
 
@@ -114,12 +125,12 @@ const Contact= () => {
         Message:
       </label>
       <textarea
-        id="message"
         name="message"
-        rows={7}
-        style={{ resize: "none" }}
-        ref={messageRef}
+        placeholder="Your message"
         required
+        maxLength={5000}
+        value={formData.message}
+        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
         className="bg-light-background dark:bg-dark-background w-full p-3 border border-light-accent dark:border-dark-accent  rounded focus:outline-none focus:border-light-accent dark:focus:border-dark-accent"
         />
 
