@@ -37,6 +37,15 @@ export const ProjectData = [
         deployed: true,
     },
     {
+        name: "Saifee Homeopathy Clinic App",
+        githubUrl: "https://github.com/B-Mustafa/drshujauddin.git",
+        description: "A doctor's clinic app for booking appointment and doctor's admin panel for patient records and consultation .",
+        technology: "Nextjs , Tailwind Css , MongoDB , TypeScript",
+        projectUrl: "https://saifeehomeopathy.in",
+        category: "fs",
+        deployed: true,
+    },
+    {
         name: "Patient Management System",
         githubUrl: "https://github.com/B-Mustafa/patient-manager.git",
         description: "A Python Software used for storage patient records .",
