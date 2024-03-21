@@ -10,7 +10,7 @@ export type ProjectData = {
 
 export const ProjectData = [
     {
-        name: "Portfolio Website",
+        name: "Portfolio Template",
         githubUrl: "https://github.com/B-Mustafa/Portfolio.git",
         description: "A Portfolio website designed using Html, Css, Javascript .",
         technology: "Html, Css, Javascript",
@@ -24,6 +24,15 @@ export const ProjectData = [
         description: "A Portfolio website designed using Next.Js .",
         technology: "Next.Js , Tailwind Css",
         projectUrl: "https://mustafabhikhapur.vercel.app/",
+        category: "NextJs",
+        deployed: true,
+    },
+    {
+        name: "Personal Portfolio ",
+        githubUrl: "https://github.com/B-Mustafa/nextjs-portfolio.git",
+        description: "My personal portfolio Website made using Nextjs",
+        technology: "Next.Js , Tailwind Css",
+        projectUrl: "https://mustafadev.me/",
         category: "NextJs",
         deployed: true,
     },
