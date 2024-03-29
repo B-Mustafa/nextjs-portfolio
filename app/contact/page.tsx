@@ -77,6 +77,7 @@ function Contact() {
           }
 
           toast.success("Email sent successfully!");
+          setFormData({ name: '', email: '', subject: '', message: '' });
         }}
             >
       <label htmlFor="name" className="block text-light-primary dark:text-dark-primary text-sm font-bold mb-2">
