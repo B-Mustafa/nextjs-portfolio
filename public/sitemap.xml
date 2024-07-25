@@ -8,45 +8,45 @@
 
 
 <url>
-  <loc>https://mustafadev.me/</loc>
+  <loc>https://mustafabhikhapur.me/</loc>
   <lastmod>2024-02-08T08:28:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://mustafadev.me/about</loc>
+  <loc>https://mustafabhikhapur.me/about</loc>
   <lastmod>2024-02-08T08:28:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mustafadev.me/project</loc>
+  <loc>https://mustafabhikhapur.me/project</loc>
   <lastmod>2024-02-08T08:28:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mustafadev.me/service</loc>
+  <loc>https://mustafabhikhapur.me/service</loc>
   <lastmod>2024-02-08T08:28:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<!-- <url>
+  <loc>https://mustafabhikhapur.me/blog</loc>
+  <lastmod>2024-02-08T08:28:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url> -->
 <url>
-  <loc>https://mustafadev.me/blog</loc>
+  <loc>https://mustafabhikhapur.me/contact</loc>
   <lastmod>2024-02-08T08:28:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://mustafadev.me/contact</loc>
-  <lastmod>2024-02-08T08:28:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mustafadev.me/blog/center-a-div</loc>
+<!-- <url>
+  <loc>https://mustafabhikhapur.me/blog/center-a-div</loc>
   <lastmod>2024-02-08T08:28:04+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mustafadev.me/blog/blogpost</loc>
+</url> -->
+<!-- <url>
+  <loc>https://mustafabhikhapur.me/blog/blogpost</loc>
   <lastmod>2024-02-08T08:28:04+00:00</lastmod>
   <priority>0.64</priority>
-</url>
+</url> -->
 
 
 </urlset>
