@@ -33,7 +33,7 @@ export const sendEmail = async (formData: FormData) => {
   let data;
   try {
     data = await resend.emails.send({
-      from: "Contact@mustafadev.me",
+      from: "Contact@mustafabhikhapur.me",
       to: "bhikhapurmustafa@gmail.com",
       subject: `${subject}`,
       reply_to: senderEmail,
