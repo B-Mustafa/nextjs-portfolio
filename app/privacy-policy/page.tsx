@@ -100,7 +100,7 @@ We use Cookies and similar tracking technologies to track the activity on Our Se
 
 Cookies or Browser Cookies. A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However&apos; if You do not accept Cookies&apos; You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies&apos; our Service may use Cookies.
 Web Beacons. Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs&apos; pixel tags&apos; and single-pixel gifs) that permit the Company&apos; for example&apos; to count users who have visited those pages or opened an email and for other related website statistics (for example&apos; recording the popularity of a certain section and verifying system and server integrity).
-Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline&apos; while Session Cookies are deleted as soon as You close Your web browser. You can learn more about cookies on TermsFeed website article.
+Cookies can be  &quot;Persistent&quot; or  &quot;Session&quot; Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline&apos; while Session Cookies are deleted as soon as You close Your web browser. You can learn more about cookies on TermsFeed website article.
 
 We use both Session and Persistent Cookies for the purposes set out below:
 
@@ -209,7 +209,7 @@ We have no control over and assume no responsibility for the content&apos; priva
 Changes to this Privacy Policy
 We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
 
-We will let You know via email and/or a prominent notice on Our Service&apos; prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.
+We will let You know via email and/or a prominent notice on Our Service&apos; prior to the change becoming effective and update the  &quot;Last updated&quot; date at the top of this Privacy Policy.
 
 You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
                         </p>
