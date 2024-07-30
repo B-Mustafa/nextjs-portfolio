@@ -40,11 +40,11 @@ const SidebarItems = [
 ];
 
 const Sidebar = () => {
-    const pathname = usePathname();
+  const pathname = usePathname();
   const [activeLink, setActiveLink] = useState(SidebarItems[0]);
-  const { isOpen, closeMobileMenu , toggleMenu } = useMenuStore();
+  const { isOpen, closeMobileMenu, toggleMenu } = useMenuStore();
 
-  const handleLinkClick = (link:typeof SidebarItems[0]) => {
+  const handleLinkClick = (link: typeof SidebarItems[0]) => {
     closeMobileMenu();
     setActiveLink(link);
   };
@@ -92,39 +92,43 @@ const Sidebar = () => {
     }
   }, [isOpen]);
 
-  
-    return (
-        <aside className='z-10 items-center' >
-          
-          <section className={`z-10 h-screen overflow-y-auto ${isOpen ? "max-lg:block" : "max-md:hidden"} relative w-60 lg:max-w[150px] dark:bg-dark-background bg-light-background shadow-md shadow-dark-background dark:shadow-light-background flex justify-center`} >
-           
-    
-              <div className='flex flex-col justify-center'>
-                <p className="font-bold text-xl text-light-text dark:text-dark-text text-center mb-6">Mustafa </p>
-                {SidebarItems.map((link) => {
-                  const isActive = activeLink === link;
-    
-                  return (
-                    <a
-                      href={`${link.href}`}
-                      key={link.name}
-                      className={`items-center  text-lg text-text flex bg-light-background dark:bg-dark-background rounded-md dark:text-dark-text text-light-text  mb-4 p-3 border border-dark-accent dark:border-light-accent dark:border-opacity-30  border-opacity-30 ${
-                        isActive ? " text-blue-600" : "text-text "
-                      }`}
-                      onClick={() => handleLinkClick(link)}
-                      >
-                      {<link.icon className="item-center" />}
-                      <p className='pl-2'>{link.name}</p>
-                    </a>
-                  );
-                })}
-              </div>
-               
-        
-            
-          </section>
-        </aside>
-      );
-    };
-    
-    export default Sidebar;
+
+  return (
+    <aside className='z-10 items-center' >
+
+      <section className={`z-10 h-screen overflow-y-auto ${isOpen ? "max-lg:block" : "max-md:hidden"} relative w-60 lg:max-w[150px] dark:bg-dark-background bg-light-background shadow-md shadow-dark-background dark:shadow-light-background flex justify-center`} >
+
+
+        <div className='flex flex-col justify-center'>
+          <p className="font-bold text-xl text-light-text dark:text-dark-text text-center mb-6">Mustafa </p>
+          {SidebarItems.map((link) => {
+            const isActive = activeLink === link;
+
+            return (
+              <a
+                href={`${link.href}`}
+                key={link.name}
+                className={`items-center  text-lg text-text flex bg-light-background dark:bg-dark-background rounded-md dark:text-dark-text text-light-text  mb-4 p-3 border border-dark-accent dark:border-light-accent dark:border-opacity-30  border-opacity-30 ${isActive ? " text-blue-600" : "text-text "
+                  }`}
+                onClick={() => handleLinkClick(link)}
+              >
+                {<link.icon className="item-center" />}
+                <p className='pl-2'>{link.name}</p>
+              </a>
+            );
+          })}
+        <div className='flex flex-col mt-4 justify center text-start'>
+          <Link href={"/tos"} className='ml-2 hover:text-light-accent dark:hover:text-dark-accent mt-2'>Terms and Conditions</Link>
+          <Link href={"/privacy-policy"} className='ml-2 hover:text-light-accent dark:hover:text-dark-accent mt-2'>Privacy Policy</Link>
+          <Link href={"/refund-policy"} className='ml-2 hover:text-light-accent dark:hover:text-dark-accent mt-2'>Refund/Cancellation Policy</Link>
+        </div>
+        </div>
+
+
+
+      </section>
+    </aside>
+  );
+};
+
+export default Sidebar;
