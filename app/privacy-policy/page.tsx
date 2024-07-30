@@ -32,10 +32,10 @@ export default function TOS() {
                         Account means a unique account created for You to access our Service or parts of our Service
                     </li>
                     <li>
-                        Affiliate means an entity that controls&apos; is controlled by or is under common control with a party&apos; where "control" means ownership of 50% or more of the shares&apos; equity interest or other securities entitled to vote for election of directors or other managing authority.
+                        Affiliate means an entity that controls&apos; is controlled by or is under common control with a party&apos; where  &quot;control&quot; means ownership of 50% or more of the shares&apos; equity interest or other securities entitled to vote for election of directors or other managing authority.
                     </li>
                     <li>
-                        Company (referred to as either "the Company"&apos; "We"&apos; "Us" or "Our" in this Agreement) refers to Mustafa Bhikhapurwala
+                        Company (referred to as either  &quot;the Company &quot;&apos;  &quot;We &quot;&apos;  &quot;Us &quot; or  &quot;Our &quot; in this Agreement) refers to Mustafa Bhikhapurwala
                     </li>
                     <li>
                         Cookies are small files that are placed on Your computer&apos; mobile device or any other device by a website&apos; containing the details of Your browsing history on that website among its many uses

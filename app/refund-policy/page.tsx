@@ -31,13 +31,13 @@ export default function TOS() {
                 </p>
                 <div>
                     <li>
-                        Company (referred to as either "the Company"&apos; "We"&apos; "Us" or "Our" in this Agreement) refers to Mustafa Bhikhapurwala.
+                        Company (referred to as either &quot;the Company &quot;&apos;  &quot;We &quot;&apos;  &quot;Us &quot; or  &quot;Our &quot; in this Agreement) refers to Mustafa Bhikhapurwala.
                     </li>
                     <li>
                         Goods refer to the items offered for sale on the Service.
                     </li>
                     <li>
-                        Orders mean a request by You to purchase Goods from Us
+                        Orders mean a request by You to purchase services from Us
                     </li>
                     <li>
                         TService refers to the Website.
