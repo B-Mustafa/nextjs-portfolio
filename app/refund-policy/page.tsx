@@ -10,13 +10,13 @@ export default function TOS() {
             </div>
             <div>
                 <p>
-                    Last updated: July 30, 2024
+                    Last updated: July 30&apos; 2024
                 </p>
                 <p>
                     Thank you for shopping at Mustafa Bhikhapurwala.
                 </p>
                 <p>
-                    If, for any reason, You are not completely satisfied with a purchase We invite You to review our policy on refunds and returns. This Return and Refund Policy has been created with the help of the Return and Refund Policy Generator.
+                    If&apos; for any reason&apos; You are not completely satisfied with a purchase We invite You to review our policy on refunds and returns. This Return and Refund Policy has been created with the help of the Return and Refund Policy Generator.
 
                     The following terms are applicable for any products that You purchased with Us.
                 </p>
@@ -31,7 +31,7 @@ export default function TOS() {
                 </p>
                 <div>
                     <li>
-                        Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Mustafa Bhikhapurwala.
+                        Company (referred to as either "the Company"&apos; "We"&apos; "Us" or "Our" in this Agreement) refers to Mustafa Bhikhapurwala.
                     </li>
                     <li>
                         Goods refer to the items offered for sale on the Service.
@@ -43,10 +43,10 @@ export default function TOS() {
                         TService refers to the Website.
                     </li>
                     <li>
-                        Website refers to Mustafa Bhikhapurwala, accessible from https://mustafabhikhapur.me
+                        Website refers to Mustafa Bhikhapurwala&apos; accessible from https://mustafabhikhapur.me
                     </li>
                     <li>
-                        You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable
+                        You means the individual accessing or using the Service&apos; or the company&apos; or other legal entity on behalf of which such individual is accessing or using the Service&apos; as applicable
                     </li>
                 </div>
                 <div>
@@ -55,9 +55,9 @@ export default function TOS() {
                         <p>
                             You are entitled to cancel Your Order within same day by giving any reason for doing so.
 
-                            The deadline for cancelling an Order is same day from the date on which You purchase the service or on which a third party you have appointed, who is not the carrier, takes possession of the service delivered.
+                            The deadline for cancelling an Order is same day from the date on which You purchase the service or on which a third party you have appointed&apos; who is not the carrier&apos; takes possession of the service delivered.
 
-                            In order to exercise Your right of cancellation, You must inform Us of your decision by means of a clear statement. You can inform us of your decision by:
+                            In order to exercise Your right of cancellation&apos; You must inform Us of your decision by means of a clear statement. You can inform us of your decision by:
                         </p>
                         <li>
                             By email: bhikhapurmustafa@gmail.com
@@ -66,13 +66,13 @@ export default function TOS() {
                             By visiting this page on our website: https://mustafabhikhapur.me/contact
                         </li>
                         <p>
-                            We will reimburse You no later than same day from the day on which We receive the service purchase. We will use the same means of payment as You used for the Order, and You will not incur any fees for such reimbursement.
+                            We will reimburse You no later than same day from the day on which We receive the service purchase. We will use the same means of payment as You used for the Order&apos; and You will not incur any fees for such reimbursement.
                         </p>
                     </div>
                     <div>
                         <h3 className="text-3xl font-medium capitalize text-light-accent dark:text-dark-accent mt-4 mb-8">Conditions for Returns</h3>
                         <p>
-                            In order for the service purchase to be eligible for a return, please make sure that:
+                            In order for the service purchase to be eligible for a return&apos; please make sure that:
                         </p>
                         <li>
                             The service were purchased in the last 24 hours
@@ -84,18 +84,18 @@ export default function TOS() {
                             The supply of services made to Your specifications or clearly personalized.
                         </li>
                         <li>
-                            The supply of services which according to their nature are not suitable to be returned, deteriorate rapidly or where the date of expiry is over.
+                            The supply of services which according to their nature are not suitable to be returned&apos; deteriorate rapidly or where the date of expiry is over.
                         </li>
                         <p>
                             We reserve the right to refuse returns of any merchandise that does not meet the above return conditions in our sole discretion.
 
-                            Only regular priced service may be refunded. Unfortunately, services on sale cannot be refunded. This exclusion may not apply to You if it is not permitted by applicable law.
+                            Only regular priced service may be refunded. Unfortunately&apos; services on sale cannot be refunded. This exclusion may not apply to You if it is not permitted by applicable law.
                         </p>
                     </div>
                     <div>
                         <h3 className="text-3xl mt-4 mb-8 text-light-accent dak:text-dark-accent capitalize text-left">Contact Us</h3>
                         <p>
-                            If you have any questions about our Returns and Refunds Policy, please contact us:
+                            If you have any questions about our Returns and Refunds Policy&apos; please contact us:
 
                             By email: bhikhapurmustafa@gmail.com
 
