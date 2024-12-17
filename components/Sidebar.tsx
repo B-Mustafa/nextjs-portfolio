@@ -117,11 +117,12 @@ const Sidebar = () => {
               </a>
             );
           })}
-        <div className='flex flex-col mt-4 justify center text-start'>
+          {/* Removed the privacy tos and refund links from sidebar as not needed rn */}
+        {/* <div className='flex flex-col mt-4 justify center text-start'>
           <Link href={"/tos"} className='ml-2 hover:text-light-accent dark:hover:text-dark-accent mt-2'>Terms and Conditions</Link>
           <Link href={"/privacy-policy"} className='ml-2 hover:text-light-accent dark:hover:text-dark-accent mt-2'>Privacy Policy</Link>
           <Link href={"/refund-policy"} className='ml-2 hover:text-light-accent dark:hover:text-dark-accent mt-2'>Refund/Cancellation Policy</Link>
-        </div>
+        </div> */}
         </div>
 
 
