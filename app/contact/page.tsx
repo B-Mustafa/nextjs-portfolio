@@ -16,14 +16,17 @@ function Contact() {
     message: '',
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    console.log(formData);
+    // console.log(formData);
     
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
@@ -78,6 +81,7 @@ function Contact() {
 
           toast.success("Email sent successfully!");
           setFormData({ name: '', email: '', subject: '', message: '' });
+          setIsSubmitting(false);
         }}
             >
       <label htmlFor="name" className="block text-light-primary dark:text-dark-primary text-sm font-bold mb-2">
