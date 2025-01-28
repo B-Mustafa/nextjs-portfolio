@@ -63,5 +63,14 @@ export const ProjectData = [
         category: "py",
         deployed: false,
     },
+    {
+        name: "Cooper Word",
+        githubUrl: "https://github.com/B-Mustafa/cooperword.git",
+        description: "The COOPER WORD is a web-based tool designed to help users create, manage, and view events in a calendar format.",
+        technology: "Nextjs , Tailwind Css , Shadcn , TypeScript , Resend Email ,  Clerk Auth",
+        projectUrl: "https://cooperword.netlify.app/",
+        category: "NextJs",
+        deployed: true,
+    },
     
 ];

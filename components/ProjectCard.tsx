@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({name , githubUrl, description,
           once: true,
         }}
         custom={index}
-            className="flex flex-col justify-between p-4 bg-light-background border border-dark-accent rounded-lg shadow-lg dark:bg-dark-background"
+            className="flex flex-col justify-between p-4 bg-light-background border border-dark-accent rounded-lg shadow-lg dark:bg-dark-background h-full"
         >
             <h3>{name}</h3>
             <div className='mb-2'>

@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer items-center pb-2 text-light-text dark:text-dark-text px-5  relative bottom-0 dark:bg-dark-background bg-light-background">
     <div className="container2 max-w-[800px] my-auto flex justify-between items-center ">
       <div className="social-icons flex gap-2 ">
-        <Link href="https://www.linkedin.com/in/mustafa-bhikhapurwala-78514126b" className=" text-2xl text-light-text dark:text-dark-text" target="_blank" rel="noopener noreferrer" >
+        <Link href="https://www.linkedin.com/in/mustafa-bhikhapur" className=" text-2xl text-light-text dark:text-dark-text" target="_blank" rel="noopener noreferrer" >
           <FaLinkedin />
         </Link>
         <Link href="https://github.com/B-Mustafa" className=" text-2xl text-light-text dark:text-dark-text" target="_blank" rel="noopener noreferrer">
